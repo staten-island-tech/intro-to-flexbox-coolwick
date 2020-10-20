@@ -8,7 +8,7 @@
 /*defaults to make the box visible*/
 .box {
   color: white;
-  font-size: 100px;
+  font-size: 30px;
   text-align: center;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -46,26 +46,23 @@
   background-color: #16a085;
 }
 
-/*start writing flexbox, above is just page setup*/
 .container {
   display: flex;
-  border: 10px solid goldenrod;
-  min-height: 100vh;*/
-  /*flex-direction: row; <-- nothing happens bc thats the default in any flex container*/
-  /*flex-direction: column; <-- aligns from top to bottom instead*/
-  /*flex-direction: column-reverse; <-- puts it in reverse duh*/
-  /*flex-wrap: nowrap; <-- also a default, you can make it wrap instead*/
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
   flex-direction: column;
+  border: 10px solid goldenrod;
+  height: 100vh;
 }
-
-/*main axis: left to right
-cross axis: top to bottom*/
 
 .box {
-  /*width: calc(33.333333333% - 20px);*/
-  width: 33.333333%;
-  margin: 10px;
-  /*border: 10px solid mistyrose;
+  flex-basis: 250px; /*<-- each box cant be 500px bc its too big, flex shrink is in active rn, but if you turn on flex wrap, it wraps around*/
+  flex-grow: 1;
 }
 
+.box3 {
+  flex-grow: 5;
+}
+
+.box4 {
+  flex-basis: 100px;
+}
