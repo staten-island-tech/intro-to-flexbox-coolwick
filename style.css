@@ -1,0 +1,47 @@
+/*boxsizing border box*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*defaults to make the box visible*/
+.box {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+/*colors for each box*/
+.box1 {
+  background-color: #1abc9c;
+}
+.box2 {
+  background-color: #3498db;
+}
+.box3 {
+  background-color: #9b59b6;
+}
+.box4 {
+  background-color: #333;
+}
+.box5 {
+  background-color: yellow;
+}
+.box6 {
+  background-color: orange;
+}
+.box7 {
+  background-color: red;
+}
+.box8 {
+  background-color: grey;
+}
+.box9 {
+  background-color: #2ecc71;
+}
+.box10 {
+  background-color: #16a085;
+}
